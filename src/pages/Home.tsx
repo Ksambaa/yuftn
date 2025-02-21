@@ -206,8 +206,7 @@ function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('src/assets/images/baackground.jpg')",
-            backgroundBlendMode: 'overlay',
+            backgroundImage: "url('src/assets/images/baackground.jpg')"
           }}
         >
           {/* Moroccan Pattern Overlay */}
