@@ -12,7 +12,7 @@ function App() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Router>
+    <Router basename="/yuftn">
       <div className="min-h-screen bg-[#1a0f0f] text-amber-100 flex flex-col">
         {/* Navigation */}
         <nav className="fixed w-full bg-[#1a0f0f]/90 backdrop-blur-sm z-50 border-b border-amber-900/20">
