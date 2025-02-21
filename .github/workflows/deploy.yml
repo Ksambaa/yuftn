@@ -24,6 +24,11 @@ jobs:
       - name: Build project
         run: npm run predeploy
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "khalil.samba@centrale-casablanca.ma"
+          git config --global user.name "Khalil Samba"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
