@@ -24,6 +24,9 @@ jobs:
       - name: Build project
         run: npm run predeploy
 
+      - name: List files in dist directory
+        run: ls -la ./dist
+
       - name: Configure Git
         run: |
           git config --global user.email "khalil.samba@centrale-casablanca.ma"
