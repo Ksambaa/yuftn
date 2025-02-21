@@ -1,6 +1,7 @@
 import { ArrowRight, Play, Calendar } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import backgroundImage from '../assets/images/baackground.jpg';
 
 // TicTacToe component
 function TicTacToe() {
@@ -203,10 +204,10 @@ function Home() {
     <div className="relative min-h-screen bg-[#1a0f0f]">
       {/* Hero Section with Moroccan-inspired Background */}
       <div className="relative h-screen overflow-hidden">
-        <div 
+      <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('src/assets/images/baackground.jpg')"
+            backgroundImage: `url(${backgroundImage})`
           }}
         >
           {/* Moroccan Pattern Overlay */}
