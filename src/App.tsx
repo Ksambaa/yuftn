@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { CloudCog as SoundCloud, Instagram, Youtube, Menu, X, Heart } from 'lucide-react';
 import { useState } from 'react';
 import Home from './pages/Home';
@@ -12,7 +12,7 @@ function App() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Router basename="/yuftn">
+    <Router>
       <div className="min-h-screen bg-[#1a0f0f] text-amber-100 flex flex-col">
         {/* Navigation */}
         <nav className="fixed w-full bg-[#1a0f0f]/90 backdrop-blur-sm z-50 border-b border-amber-900/20">
